@@ -11,21 +11,11 @@ for i in range(tot_input):
     while True :
         if arr_input[i][j:j+5] == 'twone' and j<=len(arr_input[i])-5:
             count += 1 
-            index.append(j+2)
+            index.append(j)
             j=j+4
-        elif arr_input[i][j:j+3]=='one': 
+        elif arr_input[i][j:j+3]=='one' or arr_input[i][j:j+3]=='two':
             count += 1
-            if arr_input[i][j-1]=='o' and j!=0:
-                index.append(j+1)
-            else:  
-                index.append(j)
-            j = j+2
-        elif arr_input[i][j:j+3]=='two':
-            if arr_input[i][j-1]=='t' and j!=0:
-                index.append(j+1)
-            else :
-                index.append(j)
-            count += 1
+            index.append(j)
             j = j+2
         if j <= len(arr_input[i])-4:
             j =j+1
@@ -36,5 +26,6 @@ for i in range(tot_input):
 for i in range(tot_input):
     print(tot_rem_per[i])
     for j in range(len(ind_rem_per[i])): 
-        print(ind_rem_per[i][j]+1),
+        print(ind_rem_per[i][j]),
     print('')  
+print(tot_rem_per , ind_rem_per)
