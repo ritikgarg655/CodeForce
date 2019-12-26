@@ -1,3 +1,15 @@
+def swap_str(string , first_ind , second_ind):
+    new_string = ''
+    for i in range(len(string)): 
+        if i == first_ind: 
+            new_string = new_string + string[second_ind]
+        elif i == second_ind: 
+            new_string = new_string +string[first_ind]
+        else : 
+            new_string = new_string + string[i]
+    return new_string
+
+
 total_string = int(input())
 string = []
 for i in range(total_string): 
@@ -10,13 +22,18 @@ for i in range(total_string):
     done = False
     last = False
     s = string[i][0:break_point]
-    c = string[i][break_point+1:] #equal wala chwck karna bake he
-    for j in range(min(len(s),len(c))): 
+    c = string[i][break_point+1:] #equal wala check karna bake he
+    for j in range(min(len(s),len(c))):
         if s[j] == c[j]:
-            if j == len(s)-1: 
-                last = True 
+            if j == len(s)-1:
+                last = True
+                done = True
                 final_string.append(s)
-            pass
+            elif j == min(len(s),len(c))-1:
+                last = True
+                final_string.append('---')
+            else :
+                pass
         else : 
             if s[j]<c[j]: 
                 final_string.append(s) 
@@ -25,28 +42,25 @@ for i in range(total_string):
                 for k in range(j+1 , len(s)): # for checking wheather less is available or not
                     if swaping == True: 
                         break
-                    if s[k]<c[j]: 
-                        s[j] , s[k] = s[k] , s[j] 
+                    elif s[k]<c[j]: 
+                        s = swap_str(s,j,k)
                         swaping = True
                         done = True
                         break
-                if done == False and swaping == False: 
+                if done == False and swaping == False: # Swaping of equal to know that wheather after swaping became equall
                     for k in range(j+1,len(s)): 
-                        if s[k] == c[j]: 
-                            s[j] , s[k] = s[k] , s[j] 
+                        if s[k] == c[j]:
+                            s = swap_str(s,j,k)
                             swaping = True
-                            n = n+1
                             break
-                if swaping == False : 
+                if swaping == True and done == False : 
                     final_string.append('---')
-                    break
+                    break 
                 if done == True:  
                     final_string.append(s)
                     break 
 
-    if last == True: 
-        final_string.append(s)
 
-
-print(final_string)
+for i in range(len(final_string)): 
+    print(final_string[i])
             
