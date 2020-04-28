@@ -1,2 +1,2 @@
 # CodeForce
-This repository contains codeforce practice code.
+This repository contains codeforce practice and contest solution code.
