@@ -4,6 +4,18 @@
 		"selected_items":
 		[
 			[
+				"re",
+				"return"
+			],
+			[
+				"p",
+				"path"
+			],
+			[
+				"m",
+				"mem"
+			],
+			[
 				"ma",
 				"max"
 			],
@@ -56,10 +68,6 @@
 				"arr"
 			],
 			[
-				"m",
-				"m_capacity"
-			],
-			[
 				"siz",
 				"size_t"
 			],
@@ -94,10 +102,6 @@
 			[
 				"sta",
 				"start_Y"
-			],
-			[
-				"re",
-				"rem"
 			],
 			[
 				"n-",
@@ -144,7 +148,16 @@
 			"file": "ph_dist.cpp",
 			"settings":
 			{
-				"buffer_size": 920,
+				"buffer_size": 2367,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "phonex_memory.cpp",
+			"settings":
+			{
+				"buffer_size": 1030,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
@@ -271,7 +284,7 @@
 	"groups":
 	[
 		{
-			"selected": 1,
+			"selected": 2,
 			"sheets":
 			[
 				{
@@ -302,7 +315,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
+					"stack_index": 2,
 					"type": "text"
 				},
 				{
@@ -311,19 +324,22 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 920,
+						"buffer_size": 2367,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								650,
-								650
+								2367,
+								2367
 							]
 						],
 						"settings":
 						{
+							"SL.14.region_keys":
+							[
+							],
 							"SL.33.region_keys":
 							[
 							],
@@ -331,7 +347,38 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 136.0,
+						"translation.y": 1057.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "phonex_memory.cpp",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1030,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								938,
+								938
+							]
+						],
+						"settings":
+						{
+							"SL.16.region_keys":
+							[
+							],
+							"syntax": "Packages/C++/C++.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
