@@ -45,13 +45,29 @@ void dfs(pair<int,int> mem[],int index,int &n,vector<int> &path){
 int main(){
 	int n;
 	cin>>n;
-	pair<int,int> mem[n];
+	pair<int,pair<int,int>> mem[n];
 	for(int i=0;i<n;i++){
 		int a,b;
 		cin>>a>>b;
-		mem[i] = make_pair(a,b);
+		mem[i] = make_pair(b-a,make_pair(a,b));
 	} 
 	sort(mem,mem + n);
-	vector<int> path;
-	dfs(mem,0,n,path);
+	bool visited[n] = {false};
+	int ans[n];
+	bool done = true;
+	for(int i=0;i<n;i++){
+		bool temp_done = false;
+		for(int j=mem[i].second.second;j<=mem[i].second.first;j++){
+			if(!visited[j]){
+				visited[j] = true;
+				ans[i] = j;
+				temp_done = true;
+				break;
+			}
+		}
+		if(!temp_done) {done = false;break;}
+	}
+
+	// vector<int> path;
+	// dfs(mem,0,n,path);
 }

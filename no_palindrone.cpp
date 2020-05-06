@@ -11,20 +11,9 @@ int main(){
 		cout<<"NO"<<endl;
 		return 0;
 	}
-		// if(n==1){
-		// 	if(s[0]	<'a'+p-1){
-		// 		s[0]++;
-		// 		cout<<s[0]<<endl;
-		// 	}
-		// else
-		// 	cout<<"NO"<<endl;
-		// 	return 0;
-		// }
 	while(!done){
-		// cout<<s<<endl;
 		if(s[n-1]<'a'+p-1){
 			s[n-1]++;
-			// cout<<s<<endl;
 			int i;
 			bool w = false;
 			for(i=0;i<n-1;i++){
@@ -41,12 +30,16 @@ int main(){
 			}
 			if(!w){
 				ans = s;
-				done = true;	
+				done = true;
 			}
+		}
+		else if(n==1){
+			cout<<"NO";return 0;
 		}
 		else{
 			s[n-1] = 'a'-1;
 			for(int i=n-2;i>=0;i--){
+				// cout<<s[i]<<" ";
 				if(s[i]<'a'+p-1){
 					s[i]++;
 					break;
@@ -60,6 +53,7 @@ int main(){
 					}
 				}
 			}
+			cout<<endl;
 		}
 	}
 	cout<<ans<<endl;
