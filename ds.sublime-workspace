@@ -68,19 +68,10 @@
 	"buffers":
 	[
 		{
-			"file": "rational_resis.cpp",
-			"settings":
-			{
-				"buffer_size": 299,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
 			"file": "no_palindrone.cpp",
 			"settings":
 			{
-				"buffer_size": 914,
+				"buffer_size": 811,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
@@ -142,6 +133,7 @@
 	},
 	"file_history":
 	[
+		"/home/ritik-garg/com_prog/codeforce/rational_resis.cpp",
 		"/home/ritik-garg/dev/trydjango/trydjango/src/learn_d/product/rational_resis.cpp",
 		"/home/ritik-garg/dev/trydjango/trydjango/src/learn_d/template/home.html",
 		"/home/ritik-garg/dev/trydjango/trydjango/src/learn_d/product/models.py",
@@ -195,53 +187,24 @@
 	"groups":
 	[
 		{
-			"selected": 1,
+			"selected": 0,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "rational_resis.cpp",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 299,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								270,
-								270
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/C++/C++.sublime-syntax",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
 					"file": "no_palindrone.cpp",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 914,
+						"buffer_size": 811,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								491,
-								491
+								0,
+								0
 							]
 						],
 						"settings":
@@ -249,7 +212,8 @@
 							"SL.33.region_keys":
 							[
 							],
-							"syntax": "Packages/C++/C++.sublime-syntax"
+							"syntax": "Packages/C++/C++.sublime-syntax",
+							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
 						"translation.y": 367.0,
