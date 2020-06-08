@@ -7,14 +7,14 @@ int bfs(vector<int> e[], int n,int x){
 	int max_index = 0 ;
 	int max_comp = INT_MAX;
 	for(auto it = e[x].begin(); it!=e[x].end();it++){
-		e[x] = temp;
-		cout<<e[x].size();
-		e[x].erase(it);
+		// e[x] = temp;
+		// cout<<e[x].size();
+		// e[x].erase(it);
 		queue<int> q;
-		q.push(x);
+		q.push(*it);
 		int num = 0;
 		bool visited[n] = {false};
-		visited[x] = true;
+		visited[x]=true;
 		while(!q.empty()){
 			num++;
 			int node = q.front();
@@ -27,12 +27,13 @@ int bfs(vector<int> e[], int n,int x){
 				}
 			}
 		}
-		if(max_comp<num){
-			num = max_comp;
+		if(max_comp>num){
+			max_comp = num;
 			max_index = i;
 		}
 		i++;
 	}
+	cout<<e[x][max_index]<<endl;
 	return max_index;
 }
 
@@ -47,19 +48,20 @@ int main(){
 			e[a-1].push_back(b-1);
 			e[b-1].push_back(a-1);
 		}
+		// vector<int>::iterator it = e[x].begin();
+		// cout<<e[x].size();
+		int time = bfs(e,n,x);
+		// for(int i=0;i<time;i++){
+		// 	it++;
+		// }
+		// if(e[x].size()>0)
+		// 	e[x].erase(it);
 		// BFS
 		queue<int> q;
 		q.push(x);
 		int num = 0;
 		bool visited[n] = {false};
-		vector<int>::iterator it = e[x].begin();
-		// cout<<e[x].size();
-		int time = bfs(e,n,x);
-		for(int i=0;i<time;i++){
-			it++;
-		}
-		if(e[x].size()>0)
-			e[x].erase(it);
+		visited[e[x][time]] = true;
 		// cout<<e[x].size();
 		visited[x] = true;
 		while(!q.empty()){
