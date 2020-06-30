@@ -4,32 +4,168 @@
 		"selected_items":
 		[
 			[
+				"inc",
+				"inc_char"
+			],
+			[
+				"re",
+				"size_req"
+			],
+			[
+				"it",
+				"it1"
+			],
+			[
+				"in",
+				"inc_char"
+			],
+			[
+				"an",
+				"ans_b"
+			],
+			[
+				"ans_",
+				"ans_a"
+			],
+			[
+				"ma",
+				"max_sum_k_b_temp"
+			],
+			[
+				"ans",
+				"ans_a"
+			],
+			[
 				"max",
-				"max_index"
+				"max_sum_k_b"
+			],
+			[
+				"a",
+				"ans"
+			],
+			[
+				"s",
+				"sum"
+			],
+			[
+				"ro",
+				"row_first_index"
+			],
+			[
+				"str",
+				"start"
+			],
+			[
+				"co",
+				"count"
+			],
+			[
+				"pri",
+				"printed"
+			],
+			[
+				"st",
+				"start"
+			],
+			[
+				"c",
+				"count_prime_div"
+			],
+			[
+				"cou",
+				"count_prime_div"
+			],
+			[
+				"fr",
+				"freq"
 			],
 			[
 				"min",
-				"min_index"
+				"min_b"
+			],
+			[
+				"m",
+				"max_l"
+			],
+			[
+				"nu",
+				"num_odd"
+			],
+			[
+				"num",
+				"num_odd"
 			],
 			[
 				"pre",
-				"prev_one"
+				"prev_odd"
 			],
 			[
-				"prev",
-				"prev_zero"
+				"rem",
+				"rem_od"
+			],
+			[
+				"sum",
+				"sum_even"
+			],
+			[
+				"su",
+				"sum_even"
+			],
+			[
+				"le",
+				"len"
+			],
+			[
+				"req",
+				"req_b"
+			],
+			[
+				"req_",
+				"req_s"
+			],
+			[
+				"sh",
+				"shop_s"
+			],
+			[
+				"sho",
+				"shop_b"
 			],
 			[
 				"en",
 				"endl"
 			],
 			[
-				"cou",
-				"count_0"
+				"end",
+				"end_ver"
 			],
 			[
-				"co",
-				"count_1"
+				"tem",
+				"temp-1"
+			],
+			[
+				"temp",
+				"temp-1"
+			],
+			[
+				"te",
+				"temp-1"
+			],
+			[
+				"tme",
+				"temp_max"
+			],
+			[
+				"A",
+				"arr"
+			],
+			[
+				"b",
+				"b_rec"
+			],
+			[
+				"prev",
+				"prev_zero"
 			],
 			[
 				"pu",
@@ -40,20 +176,8 @@
 				"node"
 			],
 			[
-				"nu",
-				"num_odd"
-			],
-			[
 				"od",
 				"ood_req"
-			],
-			[
-				"st",
-				"start_index"
-			],
-			[
-				"le",
-				"level_node"
 			],
 			[
 				"push",
@@ -80,14 +204,6 @@
 				"sort_path"
 			],
 			[
-				"s",
-				"start"
-			],
-			[
-				"in",
-				"index_start"
-			],
-			[
 				"vi",
 				"visited_2"
 			],
@@ -112,44 +228,12 @@
 				"path"
 			],
 			[
-				"ma",
-				"max_level"
-			],
-			[
 				"p",
 				"push_back"
 			],
 			[
-				"tem",
-				"temp_post"
-			],
-			[
-				"te",
-				"temp_post"
-			],
-			[
 				"is",
 				"isComposite"
-			],
-			[
-				"c",
-				"cin"
-			],
-			[
-				"num",
-				"num_even"
-			],
-			[
-				"end",
-				"end"
-			],
-			[
-				"re",
-				"return"
-			],
-			[
-				"rem",
-				"rem_k"
 			],
 			[
 				"bob",
@@ -162,10 +246,6 @@
 			[
 				"bo",
 				"bob_sum"
-			],
-			[
-				"an",
-				"ans_len"
 			],
 			[
 				"be",
@@ -186,14 +266,6 @@
 			[
 				"f",
 				"first"
-			],
-			[
-				"m",
-				"mem"
-			],
-			[
-				"str",
-				"string"
 			],
 			[
 				"e",
@@ -232,14 +304,6 @@
 				"size_t"
 			],
 			[
-				"A",
-				"a"
-			],
-			[
-				"ans",
-				"ans"
-			],
-			[
 				"sta",
 				"start_Y"
 			],
@@ -262,20 +326,85 @@
 			[
 				"s2",
 				"s2_it"
-			],
-			[
-				"pri",
-				"find_prime_list"
 			]
 		]
 	},
 	"buffers":
 	[
 		{
-			"file": "game_leave.cpp",
+			"file": "max_abs.cpp",
 			"settings":
 			{
-				"buffer_size": 1514,
+				"buffer_size": 636,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "#include <bits\\stdc++.h>\n \nusing namespace std;\n \nconst int M = 1e5+10;\nint a[M] , dp[M];\n \nint main()\n{\n\tint n , max = 0;\n\tcin >> n;\n\tfor (int i = 0; i < n ; i++)\n\t\tcin >> a[i];\n\tfor (int i = 0 ; i < M ; i++)\n\t\tdp[i] = M;\n\tfor (int i = 0 ; i < n ; i++){\n\t\tdp[lower_bound(dp , dp+M , a[i]) - dp] = a[i];\n\t}\n\tfor (int i = 0 ; i <= n ; i++){\n\t\tif (dp[i] == M)\n\t\t{\n\t\t\tmax = i;\n\t\t\tbreak;\n\t\t}\n\t}\n\tcout << max << endl;\n}",
+			"file": "bubble_sort.cpp",
+			"file_size": 418,
+			"file_write_time": 132368710372781375,
+			"settings":
+			{
+				"buffer_size": 414,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "#include<bits/stdc++.h>\nusing namespace std;\n\nint main(){\n\tint n,p;cin>>n>>p;\n\tstring s;cin>>s;\n\tint un_eq = 0;\n\t\n\tfor(int i=0;i<n;i++){\n\n\t}\t\n}",
+			"file": "palindrom_trans.cpp",
+			"file_size": 143,
+			"file_write_time": 132370171273663947,
+			"settings":
+			{
+				"buffer_size": 143,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "short_substring.cpp",
+			"settings":
+			{
+				"buffer_size": 236,
+				"encoding": "UTF-8",
+				"line_ending": "Unix",
+				"name": "#include<bits/stdc++.h>"
+			}
+		},
+		{
+			"file": "even_array.cpp",
+			"settings":
+			{
+				"buffer_size": 427,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "social_dist_table.cpp",
+			"settings":
+			{
+				"buffer_size": 504,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "task_on_board.cpp",
+			"settings":
+			{
+				"buffer_size": 999,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "neck_Ass.cpp",
+			"settings":
+			{
+				"buffer_size": 677,
+				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
 		}
@@ -340,15 +469,46 @@
 	},
 	"expanded_folders":
 	[
-		"/home/ritik-garg/com_prog/codeforce"
+		"/home/ritik-garg/com_prog/codeforce",
+		"/home/ritik-garg/com_prog/codeforce/mokevita"
 	],
 	"file_history":
 	[
+		"/home/ritik-garg/com_prog/codeforce/mokevita/philaland.cpp",
+		"/opt/lampp/htdocs/index.php",
+		"/home/ritik-garg/xamp_data/db.php",
+		"/home/ritik-garg/com_prog/codeforce/mafia.cpp",
+		"/home/ritik-garg/com_prog/codeforce/num_ways.cpp",
+		"/home/ritik-garg/com_prog/codeforce/gargari_bishop.cpp",
+		"/home/ritik-garg/com_prog/codeforce/restore_graph.cpp",
+		"/home/ritik-garg/com_prog/codeforce/bear_p_num.cpp",
+		"/home/ritik-garg/com_prog/codeforce/vasya_basket.cpp",
+		"/home/ritik-garg/com_prog/codeforce/social_dist.cpp",
+		"/home/ritik-garg/com_prog/codeforce/painting_fence.cpp",
+		"/home/ritik-garg/com_prog/codeforce/part_array.cpp",
+		"/home/ritik-garg/com_prog/codeforce/xxxx.cpp",
+		"/home/ritik-garg/com_prog/codeforce/count_tri.cpp",
+		"/home/ritik-garg/com_prog/codeforce/seq_digit.cpp",
+		"/home/ritik-garg/com_prog/codeforce/good_string.cpp",
+		"/home/ritik-garg/com_prog/codeforce/valid_Set.cpp",
+		"/home/ritik-garg/com_prog/codeforce/color_grapgh.cpp",
+		"/home/ritik-garg/com_prog/codeforce/hamburger.cpp",
+		"/home/ritik-garg/com_prog/codeforce/young_exp.cpp",
+		"/home/ritik-garg/com_prog/codeforce/vasya_chess.cpp",
+		"/home/ritik-garg/com_prog/codeforce/min_euler_circle.cpp",
+		"/home/ritik-garg/com_prog/codeforce/te_another.cpp",
+		"/home/ritik-garg/com_prog/codeforce/mixing_water.cpp",
+		"/home/ritik-garg/com_prog/codeforce/new_threat.cpp",
+		"/home/ritik-garg/com_prog/codeforce/berland_poker.cpp",
+		"/home/ritik-garg/com_prog/codeforce/temp.cpp",
+		"/home/ritik-garg/com_prog/codeforce/rotating_mach.cpp",
+		"/home/ritik-garg/com_prog/codeforce/trouble_sort.cpp",
+		"/home/ritik-garg/com_prog/codeforce/game_leave.cpp",
+		"/home/ritik-garg/com_prog/codeforce/matrix_game.cpp",
 		"/home/ritik-garg/com_prog/codeforce/multiset.cpp",
 		"/home/ritik-garg/com_prog/codeforce/john_cont.cpp",
 		"/home/ritik-garg/com_prog/codeforce/john_hob.cpp",
 		"/home/ritik-garg/com_prog/codeforce/beu_num.cpp",
-		"/home/ritik-garg/com_prog/codeforce/game_leave.cpp",
 		"/home/ritik-garg/com_prog/codeforce/subseq_hate.cpp",
 		"/home/ritik-garg/com_prog/codeforce/odd_sum.cpp",
 		"/home/ritik-garg/com_prog/codeforce/color_rev.cpp",
@@ -422,6 +582,10 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"}\n",
+			"it",
+			"\t\t\n",
+			"\t\n",
 			"path",
 			"endl",
 			"\t\t\t\n",
@@ -463,36 +627,238 @@
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 2,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "game_leave.cpp",
-					"semi_transient": true,
+					"file": "max_abs.cpp",
+					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1514,
+						"buffer_size": 636,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1509,
-								1509
+								462,
+								462
+							],
+							[
+								636,
+								636
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C++/C++.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 7,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "bubble_sort.cpp",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 414,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								253,
+								253
 							]
 						],
 						"settings":
 						{
 							"syntax": "Packages/C++/C++.sublime-syntax",
-							"translate_tabs_to_spaces": false
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 509.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "palindrom_trans.cpp",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 143,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								113,
+								113
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C++/C++.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "short_substring.cpp",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 236,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								145,
+								145
+							]
+						],
+						"settings":
+						{
+							"auto_name": "#include<bits/stdc++.h>",
+							"syntax": "Packages/C++/C++.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "even_array.cpp",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 427,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								112,
+								112
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C++/C++.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 6,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "social_dist_table.cpp",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 504,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								470,
+								470
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C++/C++.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "task_on_board.cpp",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 999,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								636,
+								636
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C++/C++.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 71.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "neck_Ass.cpp",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 677,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								184,
+								184
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C++/C++.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
 					"type": "text"
 				}
 			]
@@ -587,7 +953,7 @@
 	"show_open_files": false,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 223.0,
+	"side_bar_width": 105.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{
