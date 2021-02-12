@@ -1,111 +1,41 @@
-#ifndef _GLIBCXX_NO_ASSERT
-#include <cassert>
-#endif
-#include <cctype>
-#include <cerrno>
-#include <cfloat>
-#include <ciso646>
-#include <climits>
-#include <clocale>
-#include <cmath>
-#include <csetjmp>
-#include <csignal>
-#include <cstdarg>
-#include <cstddef>
-#include <cstdio>
-#include <cstdlib>
-#include <cstring>
-#include <ctime>
-#include <cwchar>
-#include <cwctype>
+#include<bits/stdc++.h>
+using namespace std;
 
-#if __cplusplus >= 201103L
-#include <ccomplex>
-#include <cfenv>
-#include <cinttypes>
-#include <cstdalign>
-#include <cstdbool>
-#include <cstdint>
-#include <ctgmath>
-#include <cuchar>
-#endif
+// template 
+typedef long long ll;
+typedef pair<int,int> pii;
+typedef pair<ll,ll> pll;
+typedef vector<int> vi;
+typedef vector<vi> vvi;
+typedef vector<ll> vl;
+typedef vector<vl> vvl;
+typedef vector<pii> vii;
 
-// C++
-#include <algorithm>
-#include <bitset>
-#include <complex>
-#include <deque>
-#include <exception>
-#include <fstream>
-#include <functional>
-#include <iomanip>
-#include <ios>
-#include <iosfwd>
-#include <iostream>
-#include <istream>
-#include <iterator>
-#include <limits>
-#include <list>
-#include <locale>
-#include <map>
-#include <memory>
-#include <new>
-#include <numeric>
-#include <ostream>
-#include <queue>
-#include <set>
-#include <sstream>
-#include <stack>
-#include <stdexcept>
-#include <streambuf>
-#include <string>
-#include <typeinfo>
-#include <utility>
-#include <valarray>
-#include <vector>
+#define pb push_back;
+#define mp make_pair;
+#define f first;
+#define s second;
+#define rep(i,a,b) for(int i=a;i<b;i++);
+#define repv(i,v) for(int i=0;i<v.size();i++);
+#define reps(i,s) for(int i=0;i<s.length();i++);
+#define allv(v) v.begin(),v.end();
+#define alla(arr,sz) arr,arr+sz;
+#define rev(v) reverse(allv(v));
+#define reva(a) reverse(alla(a));
 
-#if __cplusplus >= 201103L
-#include <array>
-#include <atomic>
-#include <chrono>
-#include <codecvt>
-#include <condition_variable>
-#include <forward_list>
-#include <future>
-#include <initializer_list>
-#include <mutex>
-#include <random>
-#include <ratio>
-#include <regex>
-#include <scoped_allocator>
-#include <system_error>
-#include <thread>
-#include <tuple>
-#include <typeindex>
-#include <type_traits>
-#include <unordered_map>
-#include <unordered_set>
-#endif
 
-#if __cplusplus >= 201402L
-#include <shared_mutex>
-#endif
+void solve(){
+	int i,j,k,q,l;
+}
 
-#if __cplusplus >= 201703L
-#include <any>
-#include <charconv>
-// #include <execution>
-#include <filesystem>
-#include <optional>
-#include <memory_resource>
-#include <string_view>
-#include <variant>
-#endif
-
-#if __cplusplus > 201703L
-#include <bit>
-// #include <compare>
-// #include <span>
-// #include <syncstream>
-#include <version>
-#endif
+int main(){
+	ios::sync_with_stdio(0);
+    cin.tie(0);
+    cout.tie(0);
+	int t;
+	// t = 1;
+	cin>>t;
+	while(t--){
+		solve();
+	}
+}
